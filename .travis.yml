@@ -25,16 +25,16 @@ script:
   # cppcheck
   - cppcheck --quiet --error-exitcode=1 . 
   # OCLint
-  - wget https://raw.githubusercontent.com/richelbilderbeek/correct_cpp/master/is_perfect/do_oclint
+  - wget https://raw.githubusercontent.com/richelbilderbeek/correct_cpp/master/is_prime/do_oclint
   - chmod +x do_oclint
   - ./do_oclint
   # Build, run and test the release version
-  - wget https://raw.githubusercontent.com/richelbilderbeek/correct_cpp/master/is_perfect/main.pro
-  - wget https://raw.githubusercontent.com/richelbilderbeek/correct_cpp/master/is_perfect/test
+  - wget https://raw.githubusercontent.com/richelbilderbeek/correct_cpp/master/is_prime/main.pro
+  - wget https://raw.githubusercontent.com/richelbilderbeek/correct_cpp/master/is_prime/test
   - chmod +x test
   - ./test
   # Get code coverage badge (unneeded, codecov is tested by 'test' already
-  - wget https://raw.githubusercontent.com/richelbilderbeek/correct_cpp/master/is_perfect/get_code_cov
+  - wget https://raw.githubusercontent.com/richelbilderbeek/correct_cpp/master/is_prime/get_code_cov
   - chmod +x get_code_cov
   - ./get_code_cov
   - codecov
