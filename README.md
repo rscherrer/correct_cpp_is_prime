@@ -84,7 +84,7 @@ int main(int argc, char* argv[])
 }
 ```
 
- * Yes, you may start from scratch if you think that is simpler
+ * You may start from scratch if you think that is simpler
  * The code has a too high cyclomatic complexity. Simplify it. See [how to lower cyclomatic complexity](https://github.com/richelbilderbeek/correct_cpp/blob/master/lower_cyclomatic_complexity.md). 
    Tips:
      * put the content of the `main` function in a seperate function, e.g. `do_main`
