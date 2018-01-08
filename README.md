@@ -12,7 +12,7 @@ master|[![Build Status](https://travis-ci.org/richelbilderbeek/correct_cpp_is_pr
 
 ## Prerequisites
 
- * Understand [how this course works](https://github.com/richelbilderbeek/correct_cpp/blob/master/how_this_course_works.md)
+ * Understand [how this course works](https://github.com/richelbilderbeek/correct_cpp/blob/master/doc/how_this_course_works.md)
  * Have written [a correct 'int_to_word' program](https://github.com/richelbilderbeek/correct_cpp_int_to_word)
 
 ## Exercise
@@ -85,13 +85,13 @@ int main(int argc, char* argv[])
 ```
 
  * You may start from scratch if you think that is simpler
- * The code has a too high cyclomatic complexity. Simplify it. See [how to lower cyclomatic complexity](https://github.com/richelbilderbeek/correct_cpp/blob/master/lower_cyclomatic_complexity.md). 
+ * The code has a too high cyclomatic complexity. Simplify it. See [how to lower cyclomatic complexity](https://github.com/richelbilderbeek/correct_cpp/blob/master/doc/lower_cyclomatic_complexity.md). 
    Tips:
      * put the content of the `main` function in a seperate function, e.g. `do_main`
      * a possible function prototype: `bool is_prime(const int i) noexcept`
      * a possible function prototype: `void test() noexcept`
  * Your code needs to have 100% code coverage, regardless how the executable is called (that is, with zero, one or more arguments), 
-   see [how to get 100 percent code coverage](https://github.com/richelbilderbeek/correct_cpp/blob/master/get_100_percent_code_coverage.md)
+   see [how to get 100 percent code coverage](https://github.com/richelbilderbeek/correct_cpp/blob/master/doc/get_100_percent_code_coverage.md)
 
 ## What is a prime?
 
