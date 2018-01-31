@@ -114,6 +114,3 @@ Number|Is prime?
 ## External links
 
  * [Wikipedia's page about primes](https://en.wikipedia.org/wiki/Prime_number)
- * [Download the Qt Creator file `main.pro`](https://raw.githubusercontent.com/richelbilderbeek/correct_cpp/master/shared/main.pro)
-
-
