@@ -2,7 +2,7 @@
 
 Branch|[Travis CI](https://travis-ci.org)|[Codecov](https://www.codecov.io)
 ---|---|---
-master|[![Build Status](https://travis-ci.org/richelbilderbeek/correct_cpp_is_prime.svg?branch=master)](https://travis-ci.org/richelbilderbeek/correct_cpp_is_prime)|[![codecov.io](https://codecov.io/github/richelbilderbeek/correct_cpp_is_prime/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/correct_cpp_is_prime/branch/master)
+master|[![Build Status](https://travis-ci.org/rscherrer/correct_cpp_is_prime.svg?branch=master)](https://travis-ci.org/rscherrer/correct_cpp_is_prime)|[![codecov.io](https://codecov.io/github/rscherrer/correct_cpp_is_prime/coverage.svg?branch=master)](https://codecov.io/github/rscherrer/correct_cpp_is_prime/branch/master)
 
 [Correct C++](https://github.com/richelbilderbeek/correct_cpp) chapter 'is_prime'.
 
@@ -13,7 +13,7 @@ master|[![Build Status](https://travis-ci.org/richelbilderbeek/correct_cpp_is_pr
 ## Prerequisites
 
  * Understand [how this course works](https://github.com/richelbilderbeek/correct_cpp/blob/master/doc/how_this_course_works.md)
- * Have written [a correct 'int_to_word' program](https://github.com/richelbilderbeek/correct_cpp_int_to_word)
+ * Have written [a correct 'int_to_word' program](https://github.com/rscherrer/correct_cpp_int_to_word)
 
 ## Exercise
 
