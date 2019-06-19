@@ -17,7 +17,9 @@ bool isPrime(const int &value) noexcept
 
         // Try to find a divisor
         int divisor;
-        for (divisor = 2; divisor != value / 2 + 1 && value % divisor != 0; ++divisor);
+        for (divisor = 2; divisor != value / 2 + 1 && value % divisor != 0;) {
+            ++divisor;   
+        }
         return divisor == value / 2 + 1;  // Have we reached the end of the loop without finding a divisor?
 
     }
