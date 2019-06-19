@@ -17,18 +17,20 @@ bool isPrime(const int &value) noexcept
 {
 
     // A prime number must be more than one
-    if (value <= 1) {
-        return false;
-    }
-    else {
+    if (value > 1) {
+
         // Try to find a divisor
         for (int divisor = 2; divisor != value / 2 + 1; ++divisor) {
-            if (!value % divisor) {
-                return true;
+            if (value % divisor == 0) {
+                return false;
             }
         }
+
     }
-    return false;
+    else {
+        return false;
+    }
+    return true;
 }
 
 
