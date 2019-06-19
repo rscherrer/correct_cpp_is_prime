@@ -23,7 +23,8 @@ bool isPrime(const int &value) noexcept
                 return false;
             }
         }
-        
+
+        // If no divisor was found then it is prime
         return true;
 
     }
