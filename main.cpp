@@ -2,12 +2,18 @@
 #include <string>
 #include <iostream>
 
+
+/// Function to check the number of arguments
 void checkNumArguments(const int &argc)
 {
     if (argc != 2) {
         throw std::runtime_error("Error: invalid number of arguments.\n");
     }
 }
+
+
+
+
 
 int main(int argc, char* argv[])
 {
@@ -16,15 +22,17 @@ int main(int argc, char* argv[])
 
         // Check number of arguments
         checkNumArguments(argc);
-        
+
         // Convert argument into a number
         const int value{std::stoi(argv[1])};
-        
+
         // -1: unknown
         //  0: false
         //  1: true
-        
+
         // Determine if the number is prime
+        const bool isNumberPrime = isPrime(value);
+        
         int is_prime = -1;
 
         //Trivial cases
