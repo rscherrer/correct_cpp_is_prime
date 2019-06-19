@@ -9,27 +9,26 @@ bool isPrime(const int &value) noexcept
 {
 
     // A prime number must be more than one
-    if (value > 1) {
-
-        if (value == 2) {
-            return true;
-        }
-
-        // Try to find a divisor
-        for (int divisor = 2; divisor != value / 2 + 1; ++divisor)
-        {
-            if (value % divisor == 0)
-            {
-                return false;
-            }
-        }
-
-        // If no divisor was found then it is prime
+    if (value < 2) {
+        return false;
+    }
+    
+    // Two is a prime number
+    if (value == 2) {
         return true;
-
+    }
+    
+    // Try to find a divisor
+    for (int divisor = 2; divisor != value / 2 + 1; ++divisor)
+    {
+        if (value % divisor == 0)
+        {
+            return false;
+        }
     }
 
-    return false;
+    // If no divisor was found then it is prime
+    return true;
 }
 
 
