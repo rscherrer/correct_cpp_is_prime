@@ -18,9 +18,9 @@ bool isPrime(const int &value) noexcept
         // Try to find a divisor
         int divisor;
         for (divisor = 2; divisor != value / 2 + 1 && value % divisor != 0;) {
-            ++divisor;   
+            ++divisor;
         }
-        return divisor == value / 2 + 1;  // Have we reached the end of the loop without finding a divisor?
+        return divisor == value / 2 + 1;
 
     }
 
@@ -71,6 +71,7 @@ int doMain(const std::vector<std::string> &args)
 void testUse()
 {
     assert(doMain( { "is_prime", "1"} ) == 0);
+    assert(doMain( { "is_prime", "2"} ) == 0);
     assert(doMain( { "is_prime", "3"} ) == 0);
     assert(doMain( { "is_prime", "-1"} ) == 0);
     assert(doMain( { "is_prime", "100"} ) == 0);
