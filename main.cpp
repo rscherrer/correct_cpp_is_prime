@@ -77,19 +77,19 @@ int doMain(const std::vector<std::string> &args)
 /// Function to test the task performing behavior of the program
 void testUse()
 {
-    assert(doMain( { "correct_cpp2", "1"} ) == 0);
-    assert(doMain( { "correct_cpp2", "3"} ) == 0);
-    assert(doMain( { "correct_cpp2", "-1"} ) == 0);
+    assert(doMain( { "is_prime", "1"} ) == 0);
+    assert(doMain( { "is_prime", "3"} ) == 0);
+    assert(doMain( { "is_prime", "-1"} ) == 0);
 }
 
 
 /// Function to test the error handling behavior of the program
 void testAbuse()
 {
-    assert(doMain( { "correct_cpp2", "nonsense"} ) == 1);
-    assert(doMain( { "correct_cpp2", "123456789123456789"} ) == 1);
-    assert(doMain( { "correct_cpp2", "1", "7"} ) == 1);
-    assert(doMain( { "correct_cpp2"} ) == 1);
+    assert(doMain( { "is_prime", "nonsense"} ) == 1);
+    assert(doMain( { "is_prime", "123456789123456789"} ) == 1);
+    assert(doMain( { "is_prime", "1", "7"} ) == 1);
+    assert(doMain( { "is_prime"} ) == 1);
 }
 
 
