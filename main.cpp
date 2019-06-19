@@ -80,6 +80,7 @@ void testUse()
     assert(doMain( { "is_prime", "1"} ) == 0);
     assert(doMain( { "is_prime", "3"} ) == 0);
     assert(doMain( { "is_prime", "-1"} ) == 0);
+    assert(doMain( { "is_prime", "100"} ) == 0);
 }
 
 
