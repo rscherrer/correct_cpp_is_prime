@@ -34,7 +34,7 @@ bool isPrime(const int &value) noexcept
 
 
 /// Function to run the main task
-int doMain(const std::vector<std::string> &args)
+int doMain(const std::vector<std::string> &args) noexcept
 {
     try
     {
@@ -73,7 +73,7 @@ int doMain(const std::vector<std::string> &args)
 
 
 /// Function to test the task performing behavior of the program
-void testUse()
+void testUse() noexcept
 {
     assert(doMain( { "is_prime", "1"} ) == 0);
     assert(doMain( { "is_prime", "2"} ) == 0);
@@ -84,7 +84,7 @@ void testUse()
 
 
 /// Function to test the error handling behavior of the program
-void testAbuse()
+void testAbuse() noexcept
 {
     assert(doMain( { "is_prime", "nonsense"} ) == 1);
     assert(doMain( { "is_prime", "123456789123456789"} ) == 1);
@@ -94,7 +94,7 @@ void testAbuse()
 
 
 /// Function to test the program
-void test()
+void test() noexcept
 {
     testUse();
     testAbuse();
