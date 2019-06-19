@@ -4,15 +4,6 @@
 #include <vector>
 
 
-/// Function to check the number of arguments
-void checkNumArguments(const size_t &argc)
-{
-    if (argc != 2) {
-        throw std::runtime_error("Error: Invalid number of arguments.");
-    }
-}
-
-
 /// Function to determine if an integer is prime
 bool isPrime(const int &value) noexcept
 {
@@ -42,7 +33,7 @@ int doMain(const std::vector<std::string> &args)
     {
 
         // Check number of arguments
-        checkNumArguments(args.size());
+        if (args.size() != 2) throw std::runtime_error("Error: Invalid number of arguments.");
 
         // Convert argument into a number
         const int value{std::stoi(args[1u])};
