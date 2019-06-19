@@ -11,18 +11,18 @@ bool isPrime(const int &value) noexcept
     // A prime number must be more than one
     if (value > 1) {
 
-        // Try to find a divisor
-        for (int divisor = 2; divisor != value / 2 + 1; ++divisor) {
-            if (value % divisor == 0) {
-                return false;
-            }
+        if (value == 2) {
+            return true;
         }
 
+        // Try to find a divisor
+        int divisor;
+        for (divisor = 2; divisor != value / 2 + 1 && value % divisor != 0; ++divisor);
+        return divisor == value / 2 + 1;  // Have we reached the end of the loop without finding a divisor?
+
     }
-    else {
-        return false;
-    }
-    return true;
+
+    return false;
 }
 
 
