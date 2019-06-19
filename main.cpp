@@ -7,7 +7,7 @@
 void checkNumArguments(const int &argc)
 {
     if (argc != 2) {
-        throw std::runtime_error("Error: invalid number of arguments.\n");
+        throw std::runtime_error("Error: Invalid number of arguments.\n");
     }
 }
 
@@ -32,6 +32,7 @@ bool isPrime(const int &value) noexcept
 }
 
 
+/// Program to determine if a number is prime
 int main(int argc, char* argv[])
 {
     try
@@ -50,16 +51,19 @@ int main(int argc, char* argv[])
         isNumberPrime ? std::cout << "true\n" : std::cout << "false\n";
 
     }
-    catch (const std::runtime_error&)
+    catch (const std::runtime_error &err)
     {
+        std::cout << err.what() << '\n';
         return 1;
     }
     catch (const std::invalid_argument&)
     {
+        std::cout << "Error: Argument is not an integer.\n";
         return 1;
     }
     catch (const std::out_of_range&)
     {
+        std::cout << "Error: Number too big for an integer.\n";
         return 1;
     }
 }
